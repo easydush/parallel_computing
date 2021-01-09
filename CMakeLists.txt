@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.17)
+project(parallel_computing)
+include_directories('/usr/include/mpi/')
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -fopenmp")
+set(CMAKE_C_COMPILER "/usr/bin/mpicc")
+set(CMAKE_CXX_COMPILER "/usr/bin/mpic++")
+cmake_minimum_required(VERSION 3.6)
+
+add_executable(parallel_computing gauss_parallel.cpp)

@@ -1,0 +1,4 @@
+To run MPI:
+mpicc -o test.bin ./task1.cpp -lstdc++
+
+mpirun -n 3 ./test.bin
